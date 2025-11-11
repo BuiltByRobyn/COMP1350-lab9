@@ -25,17 +25,16 @@
 </head>
 <body>
     <h1>CDN Performance Test</h1>
-    <p>This page is using <strong>LOCAL jQuery</strong></p>
+<p>This page is using <strong>CDN jQuery</strong></p>
     <button id="testBtn">Click to Test jQuery</button>
     <p id="result"></p>
 
-    <script src="jquery.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $('#testBtn').click(function() {
-                $('#result').text('✅ jQuery is working from LOCAL file!');
-            });
+    $(document).ready(function() {
+        $('#testBtn').click(function() {
+            $('#result').text('✅ jQuery is working from CDN!');
         });
-    </script>
+    });
+</script>
 </body>
 </html>
