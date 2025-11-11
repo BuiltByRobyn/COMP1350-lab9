@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDN Performance Lab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>CDN Performance Test</h1>
+    <p>This page is using <strong>LOCAL jQuery</strong></p>
+    <button id="testBtn">Click to Test jQuery</button>
+    <p id="result"></p>
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#testBtn').click(function() {
+                $('#result').text('✅ jQuery is working from LOCAL file!');
+            });
+        });
+    </script>
+</body>
+</html>
